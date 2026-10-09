@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exklusive Ferienwohnung in Häusern | Schwarzwald - Provisionsfrei</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: {
+                            800: '#065f46',
+                            900: '#064e3b',
+                        },
+                        wood: {
+                            50: '#fdfbf7',
+                            100: '#f7f2ea',
+                            800: '#5c4033',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        function imgError(image) {
+            image.onerror = null;
+            image.src = "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='600' viewBox='0 0 800 600'><rect width='100%' height='100%' fill='%23e2e8f0'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='24px' fill='%2364748b'>Bild nicht gefunden</text></svg>";
+        }
+    </script>
+</head>
+<body class="bg-wood-50 text-slate-800 font-sans antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm border-b border-amber-900/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <i class="fa-solid fa-house-tree text-emerald-800 text-2xl"></i>
+                <span class="font-semibold text-lg sm:text-xl text-slate-900 tracking-tight">Häusern / Schwarzwald</span>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-700">
+                <a href="#highlights" class="hover:text-emerald-800 transition-colors" data-de="Highlights" data-en="Highlights">Highlights</a>
+                <a href="#gallery" class="hover:text-emerald-800 transition-colors" data-de="Galerie" data-en="Gallery">Galerie</a>
+                <a href="#location" class="hover:text-emerald-800 transition-colors" data-de="Lage & Umgebung" data-en="Location">Lage & Umgebung</a>
+                <a href="#contact" class="hover:text-emerald-800 transition-colors" data-de="Kontakt" data-en="Contact">Kontakt</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <button id="lang-toggle" onclick="toggleLanguage()" class="flex items-center space-x-2 bg-wood-100 hover:bg-wood-200 border border-amber-900/20 px-3 py-1.5 rounded-full text-sm font-semibold text-slate-800 transition-all">
+                    <i class="fa-solid fa-globe text-emerald-800"></i>
+                    <span id="lang-text">EN</span>
+                </button>
+                <a href="#contact" class="bg-emerald-800 hover:bg-emerald-900 text-white px-4 py-2 rounded-lg text-sm font-medium shadow-md hover:shadow-lg transition-all" data-de="Anfragen" data-en="Inquire">Anfragen</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section mit Textblock auf der rechten Seite -->
+    <section class="relative bg-slate-900 text-white py-24 lg:py-32 overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-60">
+            <img src="Balkonsicht.jpg" onerror="imgError(this)" alt="Balkonansicht Schwarzwald" class="w-full h-full object-cover">
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-2xl ml-auto bg-slate-900/75 p-8 sm:p-10 rounded-3xl backdrop-blur-md border border-white/20 shadow-2xl">
+                <span class="inline-block bg-emerald-800/90 text-emerald-100 text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full mb-4" data-de="Provisionsfrei von Privat" data-en="Commission-Free Direct Sale">Provisionsfrei von Privat</span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 leading-tight" data-de="Ihre Oase im Schwarzwald" data-en="Your Sanctuary in the Black Forest">Ihre Oase im Schwarzwald</h1>
+                <p class="text-lg sm:text-xl text-slate-200 mb-8 leading-relaxed" data-de="Gepflegte Eigentumswohnung in Häusern mit Kamin, Galerie, eigenem Hallenbad und Sauna. Perfekt für Naturliebhaber und Erholungssuchende." data-en="Well-maintained condominium in Häusern featuring a fireplace, gallery, indoor pool, and sauna. Ideal for nature lovers and relaxation.">Gepflegte Eigentumswohnung in Häusern mit Kamin, Galerie, eigenem Hallenbad und Sauna. Perfekt für Naturliebhaber und Erholungssuchende.</p>
+                
+                <div class="flex flex-wrap items-center gap-4">
+                    <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4">
+                        <span class="block text-xs text-slate-300 uppercase tracking-wider" data-de="Kaufpreis" data-en="Purchase Price">Kaufpreis</span>
+                        <span class="text-3xl font-bold text-emerald-400">195.000 €</span>
+                    </div>
+                    <a href="#contact" class="bg-emerald-800 hover:bg-emerald-900 text-white font-medium px-6 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center space-x-2">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span data-de="Exposé & Besichtigung anfragen" data-en="Request Info & Viewing">Exposé & Besichtigung anfragen</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Facts Banner -->
+    <section class="bg-emerald-800 text-white py-6 border-b border-emerald-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div>
+                    <i class="fa-solid fa-tag text-2xl text-emerald-300 mb-1"></i>
+                    <p class="text-xs uppercase text-emerald-200" data-de="Preis" data-en="Price">Preis</p>
+                    <p class="font-bold text-lg">195.000 EUR</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-handshake-slash text-2xl text-emerald-300 mb-1"></i>
+                    <p class="text-xs uppercase text-emerald-200" data-de="Provision" data-en="Commission">Provision</p>
+                    <p class="font-bold text-lg" data-de="0% (Von Privat)" data-en="0% (Direct from owner)">0% (Von Privat)</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-map-pin text-2xl text-emerald-300 mb-1"></i>
+                    <p class="text-xs uppercase text-emerald-200" data-de="Standort" data-en="Location">Standort</p>
+                    <p class="font-bold text-lg">Häusern / Schwarzwald</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-building text-2xl text-emerald-300 mb-1"></i>
+                    <p class="text-xs uppercase text-emerald-200" data-de="Gebäude" data-en="Building">Gebäude</p>
+                    <p class="font-bold text-lg" data-de="15 Einheiten" data-en="15 Units">15 Einheiten</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights / Features -->
+    <section id="highlights" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold text-slate-900 mb-4" data-de="Ausstattung Highlights" data-en="Property Highlights">Ausstattung Highlights</h2>
+            <p class="text-slate-600" data-de="Gemütlichkeit trifft auf Komfort: Eine durchdachte Raumaufteilung ergänzt durch exklusive Annehmlichkeiten im Haus." data-en="Cozy atmosphere meets modern comfort: A thoughtful layout complemented by exclusive amenities in the building.">Gemütlichkeit trifft auf Komfort: Eine durchdachte Raumaufteilung ergänzt durch exklusive Annehmlichkeiten im Haus.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                <div class="w-12 h-12 bg-emerald-100 text-emerald-800 rounded-xl flex items-center justify-center mb-4">
+                    <i class="fa-solid fa-fire text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2" data-de="Specksteinofen & Wohnbereich" data-en="Soapstone Stove & Living Area">Specksteinofen & Wohnbereich</h3>
+                <p class="text-slate-600 text-sm" data-de="Gemütlicher Wohn- und Essbereich mit stilvollem Specksteinofen für angenehme Wärme an kühlen Tagen." data-en="Cozy living and dining area with a stylish soapstone stove for pleasant warmth on cool days.">Gemütlicher Wohn- und Essbereich mit stilvollem Specksteinofen für angenehme Wärme an kühlen Tagen.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                <div class="w-12 h-12 bg-emerald-100 text-emerald-800 rounded-xl flex items-center justify-center mb-4">
+                    <i class="fa-solid fa-stairs text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2" data-de="Offene Galerie" data-en="Open Gallery Loft">Offene Galerie</h3>
+                <p class="text-slate-600 text-sm" data-de="Flexibel nutzbarer Galeriebereich – ideal als zweiter Schlafbereich, Homeoffice oder Leseecke." data-en="Versatile loft area – ideal as a second sleeping zone, home office, or reading nook.">Flexibel nutzbarer Galeriebereich – ideal als zweiter Schlafbereich, Homeoffice oder Leseecke.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                <div class="w-12 h-12 bg-emerald-100 text-emerald-800 rounded-xl flex items-center justify-center mb-4">
+                    <i class="fa-solid fa-water-ladder text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2" data-de="Hallenbad im Haus" data-en="Indoor Swimming Pool">Hallenbad im Haus</h3>
+                <p class="text-slate-600 text-sm" data-de="Das gemeinschaftliche Hallenbad steht Ihnen kostenfrei im Haus zur Verfügung." data-en="The shared indoor pool is included and available for your use anytime in the building.">Das gemeinschaftliche Hallenbad steht Ihnen kostenfrei im Haus zur Verfügung.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                <div class="w-12 h-12 bg-emerald-100 text-emerald-800 rounded-xl flex items-center justify-center mb-4">
+                    <i class="fa-solid fa-hot-tub-person text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2" data-de="Hauseigene Sauna" data-en="In-House Sauna">Hauseigene Sauna</h3>
+                <p class="text-slate-600 text-sm" data-de="Entspannung pur direkt im Gebäude (Nutzung gegen geringe Gebühr von 4 € pro Gang)." data-en="Pure relaxation right inside the building (available for a small fee of €4 per session).">Entspannung pur direkt im Gebäude (Nutzung gegen geringe Gebühr von 4 € pro Gang).</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                <div class="w-12 h-12 bg-emerald-100 text-emerald-800 rounded-xl flex items-center justify-center mb-4">
+                    <i class="fa-solid fa-utensils text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2" data-de="Moderne Einbauküche" data-en="Modern Fitted Kitchen">Moderne Einbauküche</h3>
+                <p class="text-slate-600 text-sm" data-de="Voll ausgestattete, hochwertige Einbauküche für kulinarische Genüsse." data-en="Fully equipped, high-quality fitted kitchen ready for all your cooking needs.">Voll ausgestattete, hochwertige Einbauküche für kulinarische Genüsse.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                <div class="w-12 h-12 bg-emerald-100 text-emerald-800 rounded-xl flex items-center justify-center mb-4">
+                    <i class="fa-solid fa-mountain-sun text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2" data-de="Aussichtsbalkon" data-en="Scenic Balcony">Aussichtsbalkon</h3>
+                <p class="text-slate-600 text-sm" data-de="Gemütlicher Balkon mit wunderschöner Aussicht ins Grüne zum Entspannen." data-en="Cozy balcony offering delightful views of the surrounding natural landscape.">Gemütlicher Balkon mit wunderschöner Aussicht ins Grüne zum Entspannen.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4" data-de="Bildergalerie" data-en="Photo Gallery">Bildergalerie</h2>
+                <p class="text-slate-600" data-de="Gewinnen Sie einen umfassenden Eindruck von Ihrer zukünftigen Ferienwohnung und der Umgebung." data-en="Get a comprehensive view of your future holiday home and its surroundings.">Gewinnen Sie einen umfassenden Eindruck von Ihrer zukünftigen Ferienwohnung und der Umgebung.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-sm">
+                    <img src="Balkonsicht.jpg" onerror="imgError(this)" alt="Balkonansicht" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-4 bg-white"><p class="font-semibold text-slate-800" data-de="Balkonansicht / Ausblick" data-en="Balcony View">Balkonansicht / Ausblick</p></div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-sm">
+                    <img src="PHOTO-2026-08-26-17-04-24.jpg" onerror="imgError(this)" alt="Aussenansicht" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-4 bg-white"><p class="font-semibold text-slate-800" data-de="Aussenansicht Gebäude" data-en="Exterior View">Aussenansicht Gebäude</p></div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-sm">
+                    <img src="Kamin.jpg" onerror="imgError(this)" alt="Kamin" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-4 bg-white"><p class="font-semibold text-slate-800" data-de="Specksteinofen & Wohnbereich" data-en="Soapstone Stove">Specksteinofen & Wohnbereich</p></div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-sm">
+                    <img src="WohnEss.jpg" onerror="imgError(this)" alt="Wohn- und Essbereich" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-4 bg-white"><p class="font-semibold text-slate-800" data-de="Wohn- & Essbereich" data-en="Living & Dining Area">Wohn- & Essbereich</p></div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-sm">
+                    <img src="Zimmer.jpg" onerror="imgError(this)" alt="Schlafzimmer" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-4 bg-white"><p class="font-semibold text-slate-800" data-de="Schlafzimmer" data-en="Bedroom">Schlafzimmer</p></div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-sm">
+                    <img src="Galerie.jpg" onerror="imgError(this)" alt="Galerie" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-4 bg-white"><p class="font-semibold text-slate-800" data-de="Galerie / Loft" data-en="Gallery Loft">Galerie / Loft</p></div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-sm">
+                    <img src="Kueche.jpg" onerror="imgError(this)" alt="Küche" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-4 bg-white"><p class="font-semibold text-slate-800" data-de="Einbauküche" data-en="Fitted Kitchen">Einbauküche</p></div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-sm">
+                    <img src="Bad.jpg" onerror="imgError(this)" alt="Badezimmer" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-4 bg-white"><p class="font-semibold text-slate-800" data-de="Badezimmer mit Wanne & Dusche" data-en="Bathroom with Tub & Shower">Badezimmer mit Wanne & Dusche</p></div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-sm">
+                    <img src="Balcony.jpg" onerror="imgError(this)" alt="Balkon" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-4 bg-white"><p class="font-semibold text-slate-800" data-de="Balkon" data-en="Balcony">Balkon</p></div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-sm">
+                    <img src="Pool.jpg" onerror="imgError(this)" alt="Hallenbad" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-4 bg-white"><p class="font-semibold text-slate-800" data-de="Hallenbad im Haus" data-en="Indoor Pool">Hallenbad im Haus</p></div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-sm">
+                    <img src="Sauna.jpg" onerror="imgError(this)" alt="Sauna" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-4 bg-white"><p class="font-semibold text-slate-800" data-de="Hauseigene Sauna" data-en="Sauna">Hauseigene Sauna</p></div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-sm">
+                    <img src="Kneip.jpg" onerror="imgError(this)" alt="Kneipp-Anlage" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-4 bg-white"><p class="font-semibold text-slate-800" data-de="Kneipp-Anlage im Freien" data-en="Outdoor Kneipp Facility">Kneipp-Anlage im Freien</p></div>
+                </div>
+
+                <!-- Exakter Dateiname aus dem Upload: Wanderweg.jpg -->
+                <div class="group relative overflow-hidden rounded-2xl bg-white shadow-sm">
+                    <img src="Wanderweg.jpg" onerror="imgError(this)" alt="Wanderweg" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-4 bg-white"><p class="font-semibold text-slate-800" data-de="Wanderwege direkt am Haus" data-en="Hiking Trails Next Door">Wanderwege direkt am Haus</p></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-emerald-800 font-semibold uppercase tracking-wider text-xs" data-de="Lage & Freizeit" data-en="Location & Activities">Lage & Freizeit</span>
+                <h2 class="text-3xl font-bold text-slate-900 mt-2 mb-6" data-de="Perfekte Lage im Herzen des Schwarzwalds" data-en="Prime Location in the Black Forest">Perfekte Lage im Herzen des Schwarzwalds</h2>
+                
+                <div class="space-y-4 text-slate-600">
+                    <div class="flex items-start space-x-3">
+                        <i class="fa-solid fa-person-hiking text-emerald-800 text-xl mt-1"></i>
+                        <div>
+                            <strong class="text-slate-900" data-de="Wandern & Mountainbike:" data-en="Hiking & Mountain Biking:">Wandern & Mountainbike:</strong>
+                            <span data-de=" Wanderwege und Trails starten direkt vor der Haustür." data-en=" Hiking paths and bike trails start right outside your door."> Wanderwege und Trails starten direkt vor der Haustür.</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-3">
+                        <i class="fa-solid fa-tree text-emerald-800 text-xl mt-1"></i>
+                        <div>
+                            <strong class="text-slate-900" data-de="Erholung & Familie:" data-en="Recreation & Family:">Erholung & Familie:</strong>
+                            <span data-de=" Picknick-, Grillplätze und Spielplätze befinden sich in unmittelbarer Nähe." data-en=" Picnic areas, barbecue spots, and playgrounds are close by."> Picknick-, Grillplätze und Spielplätze befinden sich in unmittelbarer Nähe.</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-3">
+                        <i class="fa-solid fa-store text-emerald-800 text-xl mt-1"></i>
+                        <div>
+                            <strong class="text-slate-900" data-de="Einkaufen & Gastronomie:" data-en="Shopping & Dining:">Einkaufen & Gastronomie:</strong>
+                            <span data-de=" Restaurants und Geschäfte fußläufig (10-20 Min.) oder schnell per Auto erreichbar." data-en=" Restaurants and shops within 10-20 mins walk or quick drive."> Restaurants und Geschäfte fußläufig (10-20 Min.) oder schnell per Auto erreichbar.</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-3">
+                        <i class="fa-solid fa-compass text-emerald-800 text-xl mt-1"></i>
+                        <div>
+                            <strong class="text-slate-900" data-de="Beliebte Ausflugsziele:" data-en="Popular Destinations:">Beliebte Ausflugsziele:</strong>
+                            <span data-de=" Titisee, Schluchsee und der Feldberg liegen quasi direkt vor der Tür." data-en=" Titisee, Schluchsee, and Feldberg are easily reachable nearby."> Titisee, Schluchsee und der Feldberg liegen quasi direkt vor der Tür.</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-3">
+                        <i class="fa-solid fa-city text-emerald-800 text-xl mt-1"></i>
+                        <div>
+                            <strong class="text-slate-900" data-de="Anbindung nach Freiburg:" data-en="Connection to Freiburg:">Anbindung nach Freiburg:</strong>
+                            <span data-de=" Freiburg im Breisgau ist in nur ca. 1 Stunde per Auto oder ÖPNV erreichbar." data-en=" Freiburg im Breisgau is reachable in about 1 hour by car or public transport."> Freiburg im Breisgau ist in nur ca. 1 Stunde per Auto oder ÖPNV erreichbar.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-wood-100 p-8 rounded-3xl border border-amber-900/10 shadow-sm">
+                <h3 class="text-xl font-bold text-slate-900 mb-4" data-de="Über das Haus" data-en="About the Building">Über das Haus</h3>
+                <p class="text-slate-600 mb-6 leading-relaxed" data-de="Die Wohnung befindet sich in einem sehr gepflegten Haus mit insgesamt 15 Wohneinheiten, die überwiegend als ruhige Ferienwohnungen genutzt werden. Die ruhige und grüne Umgebung garantiert maximale Erholung." data-en="The apartment is located in a well-maintained building with 15 units, predominantly used as quiet vacation apartments. The serene green surroundings guarantee maximum relaxation.">Die Wohnung befindet sich in einem sehr gepflegten Haus mit insgesamt 15 Wohneinheiten, die überwiegend als ruhige Ferienwohnungen genutzt werden. Die ruhige und grüne Umgebung garantiert maximale Erholung.</p>
+                <div class="bg-white p-4 rounded-xl flex items-center space-x-4 border border-slate-200">
+                    <i class="fa-solid fa-leaf text-2xl text-emerald-800"></i>
+                    <div>
+                        <h4 class="font-semibold text-slate-900" data-de="Natur direkt vor der Tür" data-en="Nature at Your Doorstep">Natur direkt vor der Tür</h4>
+                        <p class="text-xs text-slate-500" data-de="Idyllische Schwarzwald-Landschaft in Häusern" data-en="Idyllic Black Forest scenery in Häusern">Idyllische Schwarzwald-Landschaft in Häusern</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-20 bg-emerald-900 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4" data-de="Interesse geweckt? Kontaktieren Sie uns!" data-en="Interested? Contact Us!">Interesse geweckt? Kontaktieren Sie uns!</h2>
+                <p class="text-emerald-200" data-de="Verkauf direkt vom Eigentümer – ohne Maklerprovision. Sichern Sie sich jetzt Ihren Besichtigungstermin." data-en="Direct sale from owner – zero commission. Book your viewing appointment today.">Verkauf direkt vom Eigentümer – ohne Maklerprovision. Sichern Sie sich jetzt Ihren Besichtigungstermin.</p>
+            </div>
+
+            <form class="bg-white text-slate-800 rounded-3xl p-8 shadow-2xl space-y-6" onsubmit="event.preventDefault(); alert('Vielen Dank für Ihre Anfrage! Wir melden uns in Kürze.');">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-2" data-de="Ihr Name" data-en="Your Name">Ihr Name</label>
+                        <input type="text" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-emerald-800 focus:border-transparent outline-none transition-all" placeholder="Max Mustermann">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-2" data-de="E-Mail Adresse" data-en="Email Address">E-Mail Adresse</label>
+                        <input type="email" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-emerald-800 focus:border-transparent outline-none transition-all" placeholder="max@beispiel.de">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-slate-700 mb-2" data-de="Telefonnummer (optional)" data-en="Phone Number (optional)">Telefonnummer (optional)</label>
+                    <input type="tel" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-emerald-800 focus:border-transparent outline-none transition-all" placeholder="+49 123 456789">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-slate-700 mb-2" data-de="Ihre Nachricht" data-en="Your Message">Ihre Nachricht</label>
+                    <textarea rows="4" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-emerald-800 focus:border-transparent outline-none transition-all" placeholder="Ich interessiere mich für die Ferienwohnung und würde gerne einen Besichtigungstermin vereinbaren."></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-emerald-800 hover:bg-emerald-900 text-white font-semibold py-4 rounded-xl shadow-lg transition-all text-lg" data-de="Anfrage Senden" data-en="Send Inquiry">Anfrage Senden</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+            <p data-de="&copy; 2026 Privatverkauf Ferienwohnung Häusern im Schwarzwald. Alle Angaben ohne Gewähr." data-en="&copy; 2026 Private Sale Holiday Apartment Häusern Black Forest. All details subject to change.">&copy; 2026 Privatverkauf Ferienwohnung Häusern im Schwarzwald. Alle Angaben ohne Gewähr.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Language Switcher Script -->
+    <script>
+        let currentLang = 'de';
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'de' ? 'en' : 'de';
+            document.getElementById('lang-text').innerText = currentLang === 'de' ? 'EN' : 'DE';
+            
+            const elements = document.querySelectorAll('[data-de][data-en]');
+            elements.forEach(el => {
+                if (currentLang === 'en') {
+                    el.innerHTML = el.getAttribute('data-en');
+                } else {
+                    el.innerHTML = el.getAttribute('data-de');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
